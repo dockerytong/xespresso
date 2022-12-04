@@ -6,7 +6,7 @@ h2.cell = [8, 8, 8]
 h2.pbc = [True, True, True]
 pseudopotentials = {'H': 'H.pbe-rrkjus_psl.1.0.0.UPF', }
 calc = Espresso(pseudopotentials=pseudopotentials,
-                label='scf/h2',  # 'scf/fe' is the directory, 'fe' is the prefix
+                label='scf/h2',  # 'scf/h2' is the directory, 'fe' is the prefix
                 ecutwfc=40,
                 occupations='smearing',
                 degauss=0.03,
