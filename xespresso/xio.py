@@ -60,7 +60,7 @@ def write_espresso_in(filename, atoms, input_data={}, pseudopotentials=None,
 def build_section_str(atoms, species_info, input_data, input_parameters):
     '''
     '''
-    from ase.io.espresso import cell_to_ibrav, ibrav_to_cell
+    from ase.io.espresso import ibrav_to_cell
     # Add computed parameters
     # different magnetisms means different types
     input_parameters['system']['ntyp'] = len(species_info)
